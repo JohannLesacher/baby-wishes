@@ -1,0 +1,124 @@
+.App-logo {
+  display: block;
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  font-size: 80px;
+  line-height: 80px;
+}
+
+.App-header {
+  text-align: center;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  height: auto;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 0;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+}
+
+.card::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+}
+
+.card[attr-taken="non"]::before {
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+}
+
+.card[attr-taken="oui"]::before {
+  background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+}
+
+.card-img-right {
+  height: 100%;
+}
+
+.card-img-left {
+  height: 100%;
+}
+
+.card-horizontal {
+  flex-direction: row;
+}
+
+.card-link {
+  text-decoration: underline;
+  font-size: 0.8em;
+    margin-bottom: .75rem;
+}
+
+.card-comment-title {
+  font-weight: 800;
+  color: #565a5f;
+}
+
+.card-header {
+  margin: -1.25rem -1.25rem 1.25rem;
+}
+
+.card-prix {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-top: -.375rem;
+}
+
+.card-img {
+  max-width: 25%;
+}
+
+.card-title {
+  color: #333;
+  font-weight: 800;
+}
+
+.card-desc {
+  font-style: italic;
+  color: gray;
+}
+
+.list {
+  padding: 2em;
+}
+
+.reservationForm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.98);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
